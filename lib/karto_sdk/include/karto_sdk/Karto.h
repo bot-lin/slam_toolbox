@@ -4307,6 +4307,14 @@ private:
     m_NumberOfRangeReadings = static_cast<kt_int32u>(math::Round((GetMaximumAngle() -
       GetMinimumAngle()) /
       GetAngularResolution()) + residual);
+    
+    //log
+    std::cout << "Minimum angle: " << GetMinimumAngle() << std::endl;
+    std::cout << "Maximum angle: " << GetMaximumAngle() << std::endl;
+    std::cout << "Angular resolution: " << GetAngularResolution() << std::endl;
+    std::cout << "residual: " << residual << std::endl;
+    std::cout << "Number of range readings: " << m_NumberOfRangeReadings << std::endl;
+
   }
 
 private:
